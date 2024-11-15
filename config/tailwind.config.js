@@ -9,8 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-green': '#82940c', 
+      },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        poppins: ['Poppins', 'sans-serif'],
+
       },
     },
   },
