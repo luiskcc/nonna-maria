@@ -18,6 +18,7 @@ module.exports = {
 
       },
       padding: {
+        '25px': '1.5',
         '40px': '2.5rem',    // Custom padding for 40px
         '150px': '9.375rem',  // Custom padding for 150px
         '100px': '6.25rem',   // Custom padding for 100px
