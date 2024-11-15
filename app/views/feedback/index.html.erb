@@ -55,6 +55,9 @@
 
     <section>
         <h1 class="lg:text-5xl text-4xl font-extrabold mb-4 text-custom-green">ARTESANAL</h1>
+        <carousel>
+        <%= image_tag("carousel_image.jpg")%>
+        </carousel>
         <p class="lg:text-3xl p-5 text-justify text-gray-500 font-light">Nonna Maria es una gelatería familiar que trae el auténtico sabor de Italia a Santa Cruz. Desde nuestro rincón en el residencial Anaga, ofrecemos una experiencia que va más allá del simple postre: aquí, cada producto es el resultado de un compromiso con la tradición.</p>
         </br>
 
@@ -62,23 +65,16 @@
         </p>
     </section>
 
-    <carousel>
-    <%= image_tag("carousel_image.jpg")%>
-    </carousel>
 
 
     <footer class="footer bottom-0 w-full bg-brown text-white">
         <section>
-        <div class="pb-10 flex flex-col lg:flex-row">
+        <div class="pb-10 flex flex-col items-center lg:flex-row">
             <div>
-                <h1 class="lg:text-6xl text-4xl font-poppins font-extrabold mb-4 text-custom-green">GET READY TO COOL OFF</h1>
-                <p class="lg:text-3xl p-4 text-justify text-gray-500 font-light">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
-                Desde el gelato artesanal hasta los dulces y panes que prepara la 
-                Nonna en su obrador, todo está hecho con dedicación y respeto por 
-                la tradición. Ven a disfrutar de un rincón de Italia en Santa Cruz, 
-                donde cada bocado te hará sentir como en casa.</p>
+                <p class="lg:text-3xl p-4 justify-center text-center font-light">En Nonna Maria, buscamos que cada visita </br> se convierta en un momento 
+                especial, </br> lleno de autenticidad y calidez..</p>
             </div>
-            <%= image_tag("nonna-terrace.png", alt: "la nonna maria",  class: "lg:w-1/2 h-auto")%> 
+            <%= image_tag("nonna-terrace.jpg", alt: "la nonna maria",  class: "lg:w-1/2 h-auto")%> 
         </div>
     </section>
         <span class="text-sm text-gray-500 sm:text-center text-gray-400">Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</span>
