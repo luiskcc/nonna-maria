@@ -1,33 +1,31 @@
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-
+<div class="text-center" style="color: rgb(46, 75, 96)">
 <header class="bg-gradient-to-b top-0 p-2 w-full">
     <nav class="container flex flex-col sm:flex-row justify-between items-center">
         <div class="flex justify-center mb-2 sm:mb-0">
             <ul class="flex space-x-4">
                 <li>
-                    <a href="https://www.facebook.com" class="hover:underline">Facebook</a>
+                    <a href="https://www.facebook.com/profile.php?id=61565708200757" class="hover:underline"><%= image_tag("1.svg", class: "w-10")%></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com" class="hover:underline">Instagram</a>
+                    <a href="https://www.instagram.com/nonnamaria_oficial/" class="hover:underline"><%= image_tag("2.svg", class: "w-10")%></a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com" class="hover:underline">TikTok</a>
+                    <a href="https://www.tiktok.com/@nonnamaria_oficial" class="hover:underline"><%= image_tag("3.svg", class: "w-10")%></a>
                 </li>
             </ul>
         </div>
-        <div class="lg:pr-40">
+        <div class="lg:pr-10">
             <%= image_tag("nonna_logo.png", alt: "Nonna maria logo", class: "w-60") %>
         </div>
-        <button class="border border-brown text-brown bg-transparent hover:bg-brown hover:text-white px-4 py-2 rounded transition duration-200">
-            Nuestras delicias
-        </button>
+        <a href="https://smartmenu.agorapos.com/?id=8yhqy9t0#/">
+            <button class="border border-brown text-brown bg-transparent hover:bg-brown hover:text-white px-4 py-2 rounded transition duration-200">
+                Nuestras delicias
+            </button>
+        </a>
     </nav>
 </header>
-
-<div class="text-center" style="color: rgb(46, 75, 96)">
-    <div class="content-section px-40px py-150px lg:px-100px py-300px">
-        <h1 class="lg:text-5xl text-4xl font-extrabold font-poppins mb-4 text-custom-green">¿Cómo ha sido tu experiencia?</h1>
+    <div class="content-section px-40px py-150px lg:px-10px py-50px">
+        <h1 class="lg:text-5xl text-4xl mb-4 text-custom-green" style="font-family: 'Gotham', sans-serif;">¿Cómo ha sido tu experiencia?</h1>        
         <div class="feedback-form">
             <form action="/feedbacks" method="post"id="feedbackForm">
             <input type="hidden" name="authencity_token" value="<%= form_authenticity_token %>">
@@ -59,12 +57,17 @@
         <div class="pb-10 flex flex-col lg:flex-row">
             <%= image_tag("nonna.png", alt: "la nonna maria",  class: "lg:w-1/2 h-auto")%> 
             <div>
-                <h1 class="lg:text-6xl text-4xl font-poppins font-extrabold mb-4 text-custom-green">GET READY TO COOL OFF</h1>
-                <p class="lg:text-3xl p-4 text-justify text-gray-500 font-light">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
+                <h1 class="lg:text-6xl text-4xl font-poppins font-extrabold mb-4 text-custom-green" style="font-family: 'Gotham', sans-serif;">GET READY TO COOL OFF</h1>
+                <p class="lg:text-3xl p-4 text-justify text-gray-500 font-light" style="font-family: 'Gotham', sans-serif;">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
                 Desde el gelato artesanal hasta los dulces y panes que prepara la 
                 Nonna en su obrador, todo está hecho con dedicación y respeto por 
                 la tradición. Ven a disfrutar de un rincón de Italia en Santa Cruz, 
                 donde cada bocado te hará sentir como en casa.</p>
+                <a href="https://smartmenu.agorapos.com/?id=8yhqy9t0#/">
+                    <button class="border border-brown text-brown bg-transparent hover:bg-brown hover:text-white px-4 py-2 rounded transition duration-200">
+                        Nuestras delicias
+                    </button>
+                </a>
             </div>
         </div>
     </section>

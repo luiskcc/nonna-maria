@@ -1,14 +1,3 @@
-
-@font-face {
-    font-family: 'Roca';
-    src: asset-url('RocaOne-Rg.woff2') format('woff2'),
-    asset-url('RocaOne-Rg.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
 .feedback-form {
     max-width: 400px;
     margin: 0 auto;
