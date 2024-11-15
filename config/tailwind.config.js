@@ -16,6 +16,14 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
 
       },
+      padding: {
+        '40px': '2.5rem',    // Custom padding for 40px
+        '150px': '9.375rem',  // Custom padding for 150px
+        '100px': '6.25rem',   // Custom padding for 100px
+        '500px': '31.25rem',  // Custom padding for 500px
+        '200px': '12.5rem',   // Custom padding for 200px
+        '300px': '18.75rem',  // Custom padding for 300px
+      },
     },
   },
   plugins: [
