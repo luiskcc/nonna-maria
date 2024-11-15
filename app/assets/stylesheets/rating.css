@@ -45,12 +45,11 @@
 }
 
 .submit-btn {
-    background-color: rgb(165, 186, 201);
+    background-color: #b8805e;
     color: #fff;
     padding: 5px 30px 6px;
     border: none;
     cursor: pointer;
-    border-radius: 50px;
 }
 
 .input-box {
