@@ -14,8 +14,8 @@ module.exports = {
         'brown': '#b8805e', 
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-
+        'roca': ['RocaOne', 'sans-serif'],  // Changed to match @font-face family name
+        'gotham': ['Gotham', 'sans-serif']
       },
       padding: {
         '25px': '1.5',

@@ -25,8 +25,8 @@
     </nav>
 </header>
     <div class="content-section px-40px py-150px lg:px-10px py-50px">
-        <h1 class="lg:text-5xl text-4xl mb-4 text-custom-green" style="font-family: 'Gotham', sans-serif;">¿Cómo ha sido tu experiencia?</h1>        
-        <div class="feedback-form">
+        <h1 class="lg: font-roca text-5xl text-4xl mb-4 text-custom-green">¿Cómo ha sido tu experiencia?</h1>
+            <div class="feedback-form">
             <form action="/feedbacks" method="post"id="feedbackForm">
             <input type="hidden" name="authencity_token" value="<%= form_authenticity_token %>">
                     <div class="rating">
@@ -47,7 +47,7 @@
                             <input id="email_address" name="feedback[email_address]" placeholder="Email" class="input-box">
                         </div>
                         <textarea id="comment" name="feedback[comment]" placeholder="Por favor comentanos como fue tu experiencia."></textarea>
-                        <button type="submit" class="submit-btn" onclick="redirectionToWeb()">Submit</button>
+                        <button type="submit" class="submit-btn" onclick="redirectionToWeb()">Enviar</button>
                     </div>
             </form>
         </div>
@@ -57,8 +57,8 @@
         <div class="pb-10 flex flex-col lg:flex-row">
             <%= image_tag("nonna.png", alt: "la nonna maria",  class: "lg:w-1/2 h-auto")%> 
             <div>
-                <h1 class="lg:text-6xl text-4xl font-poppins font-extrabold mb-4 text-custom-green" style="font-family: 'Gotham', sans-serif;">GET READY TO COOL OFF</h1>
-                <p class="lg:text-3xl p-4 text-justify text-gray-500 font-light" style="font-family: 'Gotham', sans-serif;">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
+                <h1 class="lg:text-6xl text-4xl font-roca font-extrabold mb-4 text-custom-green">GET READY TO COOL OFF</h1>
+                <p class="lg:text-3xl p-4 text-justify text-gray-500 font-light">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
                 Desde el gelato artesanal hasta los dulces y panes que prepara la 
                 Nonna en su obrador, todo está hecho con dedicación y respeto por 
                 la tradición. Ven a disfrutar de un rincón de Italia en Santa Cruz, 
@@ -73,7 +73,6 @@
     </section>
 
     <section>
-        <h1 class="lg:text-5xl text-4xl font-extrabold mb-4 text-custom-green">ARTESANAL</h1>
         <div class="relative w-full overflow-hidden">
             <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
                 <div class="min-w-full">
@@ -81,9 +80,6 @@
                 </div>
                 <div class="min-w-full">
                     <%= image_tag("carousel_image2.jpg", class: "w-full") %>
-                </div>
-                <div class="min-w-full">
-                    <%= image_tag("carousel_image6.jpg", class: "w-full") %>
                 </div>
                 <div class="min-w-full">
                     <%= image_tag("carousel_image4.jpg", class: "w-full") %>
@@ -95,6 +91,7 @@
             <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full" onclick="prevSlide()">❮</button>
             <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full" onclick="nextSlide()">❯</button>
         </div>
+        <h1 class="lg:text-5xl font-roca text-4xl font-extrabold mb-4 text-custom-green pt-2">ARTESANAL</h1>
 
         <script>
             let currentIndex = 0;

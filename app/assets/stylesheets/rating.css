@@ -6,7 +6,6 @@
 .rating {
     display: flex;
     flex-direction: row-reverse;
-    /* this is the magic */
     justify-content: center;
     padding: 50px;
 }

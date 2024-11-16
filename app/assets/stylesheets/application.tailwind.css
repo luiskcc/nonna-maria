@@ -11,3 +11,28 @@
 }
 
 */
+@layer base {
+
+  /* This one works */
+  @font-face {
+    font-family: 'Gotham';
+    /* Simple, matches file prefix */
+    src: url('/assets/Gotham-Black.woff2') format('woff2'),
+      url('/assets/Gotham-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Let's try matching the exact file name for Roca */
+  @font-face {
+    font-family: 'RocaOne';
+    /* Changed from RocaOne-Bl to match base name */
+    src: url('/assets/RocaOne-Bl.woff2') format('woff2'),
+      url('/assets/RocaOne-Bl.woff') format('woff');
+    font-weight: 700;
+    /* Bold weight */
+    font-style: normal;
+    font-display: swap;
+  }
+}

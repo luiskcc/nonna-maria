@@ -11,5 +11,5 @@ function showCommentSection() {
 }
 
 function redirectionToWeb(){
-    window.location.href = "https://smartmenu.agorapos.com/?id=8yhqy9t0#/"
+    window.location.href = "https://g.co/kgs/YRZokFM"
 }

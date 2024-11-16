@@ -14,4 +14,12 @@
  *= require_self
  */
 
-@import "rating"
+
+@font-face {
+    font-family: 'Roca';
+    src: font-url('RocaOne-Bl.woff2') format('woff2'),
+        font-url('RocaOne-Bl.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    @import "rating"
