@@ -4,18 +4,18 @@
         <div class="flex justify-center mb-2 sm:mb-0">
             <ul class="flex space-x-4">
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=61565708200757" class="hover:underline"><%= image_tag("1.svg", class: "w-10")%></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565708200757" class="hover:underline"><%= image_tag("1.svg", class: "w-5")%></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/nonnamaria_oficial/" class="hover:underline"><%= image_tag("2.svg", class: "w-10")%></a>
+                    <a href="https://www.instagram.com/nonnamaria_oficial/" class="hover:underline"><%= image_tag("2.svg", class: "w-5")%></a>
                 </li>
                 <li>
-                    <a href="https://www.tiktok.com/@nonnamaria_oficial" class="hover:underline"><%= image_tag("3.svg", class: "w-10")%></a>
+                    <a href="https://www.tiktok.com/@nonnamaria_oficial" class="hover:underline"><%= image_tag("3.svg", class: "w-5")%></a>
                 </li>
             </ul>
         </div>
         <div class="lg:pr-10">
-            <%= image_tag("nonna_logo.png", alt: "Nonna maria logo", class: "w-60") %>
+            <%= image_tag("nonna.svg", alt: "Nonna maria logo", class: "w-60") %>
         </div>
         <a href="https://smartmenu.agorapos.com/?id=8yhqy9t0#/">
             <button class="border border-brown text-brown bg-transparent hover:bg-brown hover:text-white px-4 py-2 rounded transition duration-200">
@@ -25,7 +25,7 @@
     </nav>
 </header>
     <div class="content-section px-40px pt-40px lg:px-10px py-50px">
-        <h1 class="lg: font-roca text-5xl text-4xl mb-4 text-custom-green text-center">¿Cómo ha sido tu experiencia?</h1>
+        <h1 class="lg: font-roca text-4xl mb-4 text-custom-green text-center">¿Cómo ha sido tu experiencia?</h1>
             <div class="feedback-form">
             <form action="/feedbacks" method="post"id="feedbackForm">
             <input type="hidden" name="authencity_token" value="<%= form_authenticity_token %>">
@@ -57,8 +57,8 @@
         <div class="pb-10 flex flex-col lg:flex-row">
             <%= image_tag("nonna.png", alt: "la nonna maria",  class: "lg:w-1/2 h-auto")%> 
             <div>
-                <h1 class="lg:text-6xl text-4xl font-roca font-extrabold mb-4 text-custom-green pt-5">GET READY TO COOL OFF</h1>
-                <p class="lg:text-3xl p-4 text-justify text-gray-500 font-light">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
+                <h1 class="lg: text-4xl font-roca font-extrabold mb-4 text-custom-green pt-5">GET READY TO COOL OFF</h1>
+                <p class="lg: p-4 text-justify text-gray-500 font-light">En la Gelateria Nonna Maria, cada sabor cuenta una historia. 
                 Desde el gelato artesanal hasta los dulces y panes que prepara la 
                 Nonna en su obrador, todo está hecho con dedicación y respeto por 
                 la tradición. Ven a disfrutar de un rincón de Italia en Santa Cruz, 
@@ -91,7 +91,7 @@
             <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white p-2 rounded-full" onclick="prevSlide()">❮</button>
             <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white p-2 rounded-full" onclick="nextSlide()">❯</button>
         </div>
-        <h1 class="lg:text-5xl font-roca text-4xl font-extrabold mb-4 text-custom-green pt-5">ARTESANAL</h1>
+        <h1 class="lg:text-4xl font-roca text-4xl font-extrabold mb-4 text-custom-green pt-5">ARTESANAL</h1>
 
         <script>
             let currentIndex = 0;
