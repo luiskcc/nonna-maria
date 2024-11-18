@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NonnaMaria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gelateria Nonna Maria</title>
+    <meta name="description" content="En Gelateria Nonna Maria tu opinión nos ayuda a crecer">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<%= asset_path('nonna.png') %>"> <!-- Optional for Apple devices -->
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:image" content="<%= asset_path('nonna.svg') %>">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
