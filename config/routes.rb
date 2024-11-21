@@ -1,5 +1,6 @@
+# config/routes.rb
 Rails.application.routes.draw do
-  get 'test', to: 'feedback#test'
   get 'feedback/index'
+  get 'feedback/politica'  # or 'feedback/politica' if renamed
   root "feedback#index"
 end
