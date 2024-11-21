@@ -8,4 +8,8 @@ class FeedbackController < ApplicationController
 
   def politica
   end
+
+  def compromiso
+    
+  end
 end
