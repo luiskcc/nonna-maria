@@ -14,26 +14,32 @@
     </section>
     <section class="py-0"> <!-- Added padding for spacing -->
         <div class="flex flex-col sm:flex-row justify-between items-center px-5 py-4">
-            <div class="flex justify-center mb-2 sm:mb-0">
-                <ul class="flex space-x-4">
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=61565708200757" class="hover:underline">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/nonnamaria_oficial/" class="hover:underline">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@nonnamaria_oficial" class="hover:underline">TikTok</a>
-                    </li>
-                    <li>
-                        <%= link_to("Política", feedback_politica_path) %>
-                    </li>
-                    <li>
-                        <%= link_to("Compromiso con la protección de datos", feedback_compromiso_path) %>
-                    </li>
-                </ul>
-            </div>
-            <span class="text-center text-xs text-right">© 2024 Nonna Maria. All Rights Reserved.</span>
+        <div class="flex justify-center mb-2 sm:mb-0">
+            <ul class="flex space-x-4">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61565708200757" class="hover:underline">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/nonnamaria_oficial/" class="hover:underline">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@nonnamaria_oficial" class="hover:underline">TikTok</a>
+            </li>
+            </ul>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-between items-center">
+            <ul class="flex space-x-4">
+            <li>
+                <%= link_to("Política", feedback_politica_path) %>
+            </li>
+            <li>
+                <%= link_to("Compromiso con la protección de datos", feedback_compromiso_path, class: "sm:w-full") %>
+            </li>
+            </ul>
+        </div>
         </div>
     </section>
+        </div>
+            <span class="text-center text-xs text-right">© 2024 Nonna Maria. All Rights Reserved.</span>
+        </div>
 </footer>
