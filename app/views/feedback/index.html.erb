@@ -58,9 +58,11 @@
                             <input id="client_name" name="feedback[client_name]" placeholder="Nombre" class="input-box">
                             <input id="email_address" name="feedback[email_address]" placeholder="Email" class="input-box">
                         </div>
-                        <textarea id="comment" name="feedback[comment]" placeholder="Por favor comentanos como fue tu experiencia."></textarea>
-                        <span class="text-xs text-gray-500">Al hacer click para enviar: "Consiento el uso de mis datos para los fines mencionados en la  <%= link_to("POLÍTICA DE PRIVACIDAD", feedback_politica_path, class: "underline text-blue-600 hover:text-blue-800") %>" </span>
-                        <button type="submit" class="submit-btn" onclick="redirectionToWeb()">Enviar</button>
+                        <div class="flex flex-col pb-10">
+                            <textarea id="comment" name="feedback[comment]" placeholder="Por favor comentanos como fue tu experiencia."></textarea>
+                            <span class="text-xs text-gray-500">Al hacer click para enviar: "Consiento el uso de mis datos para los fines mencionados en la  <%= link_to("POLÍTICA DE PRIVACIDAD", feedback_politica_path, class: "underline text-blue-600 hover:text-blue-800") %>" </span>
+                            <button type="submit" class="submit-btn" onclick="redirectionToWeb()">Enviar</button>
+                        </div>
                     </div>
             </form>
         </div>
