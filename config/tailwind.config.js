@@ -15,7 +15,8 @@ module.exports = {
       },
       fontFamily: {
         'roca': ['RocaOne', 'sans-serif'],  // Changed to match @font-face family name
-        'gotham': ['Gotham', 'sans-serif']
+        'gotham': ['Gotham', 'sans-serif'],
+        'fredoka': ['Fredoka', 'sans-serif'],
       },
       padding: {
         '25px': '1.5',
