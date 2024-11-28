@@ -11,5 +11,5 @@ function showCommentSection() {
 }
 
 function redirectionToWeb(){
-    window.location.href = "https://g.co/kgs/YRZokFM"
+    window.location.href = "https://www.instagram.com/nonnamaria_oficial/"
 }
