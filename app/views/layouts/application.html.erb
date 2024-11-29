@@ -10,7 +10,7 @@
   <link rel="icon" href="<%= asset_path('favicon.svg') %>" type="image/x-icon">
   <link rel="icon" href="<%= asset_path('favicon.png') %>" type="image/png">
   
-  <link rel="apple-touch-icon" sizes="180x180" href="<%= asset_path('apple-touch-icon.png') %>">
+  <link rel="apple-touch-icon" href="<%= asset_path('favicon.png') %>?v=2">
 
   <!-- Open Graph Meta Tags for Facebook and WhatsApp -->
   <meta property="og:title" content="Gelateria Nonna Maria">
@@ -21,7 +21,6 @@
   <meta property="og:image:height" content="630">
   <meta property="og:url" content="<%= request.original_url %>">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Gelateria Nonna Maria">
     
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
