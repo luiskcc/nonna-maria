@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get 'feedbacks/compromiso'# or 'feedback/politica' if renamed
   root "feedbacks#index"
   post 'feedbacks/create', to: 'feedbacks#create'
+  get 'menu', to: 'menus#index'
 
   resources :feedbacks, only: [:create]
-  resources :menu, only: [:index]
 end
+
