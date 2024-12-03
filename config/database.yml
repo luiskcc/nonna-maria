@@ -2,17 +2,14 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  username: luiskerchmorales
 
 development:
   <<: *default
-  database: myapp_development
+  database: nonna_maria_development
 
 test:
   <<: *default
-  database: myapp_test
-
-production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  pool: 25
-  timeout: 5000
+  database: nonna_maria_test
