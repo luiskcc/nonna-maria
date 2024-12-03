@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   post 'feedbacks/create', to: 'feedbacks#create'
 
   resources :feedbacks, only: [:create]
-  resources :menus, only: [:index]
+  resources :menu, only: [:index]
 end
