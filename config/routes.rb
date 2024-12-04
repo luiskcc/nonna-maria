@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root "feedbacks#index"
   post 'feedbacks/create', to: 'feedbacks#create'
   get 'menu', to: 'menus#index'
+  get 'feedback/gracias', to: 'feedbacks#gracias'
 
   resources :feedbacks, only: [:create]
 end

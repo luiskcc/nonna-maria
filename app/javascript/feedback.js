@@ -9,7 +9,3 @@ function showCommentSection() {
         console.error("Comment element not found in the DOM");
     }
 }
-
-function redirectionToWeb(){
-    window.location.href = "https://www.instagram.com/nonnamaria_oficial/"
-}
