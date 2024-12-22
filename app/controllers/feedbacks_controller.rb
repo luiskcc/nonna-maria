@@ -16,6 +16,9 @@ class FeedbacksController < ApplicationController
   def compromiso
   end
 
+  def instagram
+  end
+
   def create
     @feedback = Feedback.new(feedback_params)
       begin
