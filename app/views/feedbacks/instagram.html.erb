@@ -1,9 +1,12 @@
 
-    <div class="p-10 content-section px-40px pt-40px lg:px-10px py-50px">
-                <h1 class="ml-10 lg: font-fredoka font-extrabold text-4xl mb-4 text-custom-green text-center">Comparte tu historia y te regalamos un mini gelato</h1>
+    <div class="p-10 content-section px-40px pt-40px lg:px-10px py-50px justify-center items-center">
+    <h1 class="mb-10 lg: font-fredoka font-extrabold text-4xl mb-4 text-custom-green text-center">Comparte tu historia y te regalamos un mini gelato</h1>
         <ul>
             <li>
-                <h1 class="lg: font-fredoka font-extrabold text-4xl mb-4 text-custom-green text-center">Etiqueta @gelaterianonnamaria</h1>
+                <h1 class="lg: font-fredoka font-extrabold text-4xl mb-4 text-custom-green text-center">Etiqueta a</h1>
+                <div class="border-2 border-custom-green rounded-full p-2 m-10" id="instagram-tag" onclick="copyToClipboard('@gelaterianonnamaria')">
+                    @gelaterianonnamaria
+                </div>
             </li>
             <li>
                 <div class="flex justify-center items-center gap-4">
@@ -25,3 +28,21 @@
             </li>
         </ul>
     </div>
+
+
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            // Optional: Add visual feedback
+            const tag = document.getElementById('instagram-tag');
+            const originalText = tag.innerHTML;
+            tag.innerHTML = '¡Copiado!';
+            
+            setTimeout(() => {
+                tag.innerHTML = originalText;
+            }, 2000);
+        }).catch(err => {
+            console.error('Error copying text: ', err);
+        });
+    }
+</script>
